@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>8b2c033f-d7b9-437e-a703-9f5db75a1484</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AuthorizeNet" Version="2.0.3" />
+    <PackageReference Include="Stripe.net" Version="45.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\BU.DTO\BU.DTO.csproj" />
+    <ProjectReference Include="..\..\Business\BU.Services\BU.Services.csproj" />
+    <ProjectReference Include="..\..\Data\DA.Entities\DA.Entities.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.Common\IN.Common.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.DependencyResolution\IN.DependencyResolution.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.Logging\IN.Logging.csproj" />
+  </ItemGroup>
+</Project>

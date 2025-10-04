@@ -1,0 +1,3 @@
+/Application/WebAPI/bin/Debug/netcoreapp3.1/C:\logs\FE_Enterprise_Log_2024-07-04.txt
+/Application/WebAPI/bin/Debug/netcoreapp3.1/C:\logs\FE_Enterprise_Log_2024-07-22.txt
+Application/WebAPI/c:\temp\internal-nlogcore.txt

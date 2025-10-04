@@ -1,0 +1,20 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/.Application/WebAPI/bin
+/.Application/WebAPI/obj
+
+/.Bussiness/WebAPI/obj
+
+# Ignore .NET build directories
+bin/
+obj/
+
+# Ignore files with specific extensions
+*.dll
+*.pdb
+*.exe
+
+Application/WebAPI/c:\temp\internal-nlogcore.txt

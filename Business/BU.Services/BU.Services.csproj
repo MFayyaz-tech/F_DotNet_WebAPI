@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="IServices\Settings\**" />
+    <Compile Remove="IServices\Setup\**" />
+    <Compile Remove="Services\Settings\**" />
+    <EmbeddedResource Remove="IServices\Settings\**" />
+    <EmbeddedResource Remove="IServices\Setup\**" />
+    <EmbeddedResource Remove="Services\Settings\**" />
+    <None Remove="IServices\Settings\**" />
+    <None Remove="IServices\Setup\**" />
+    <None Remove="Services\Settings\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IServices\Setup\IRolePermissionService.cs" />
+    <Compile Include="IServices\Setup\IRoleService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\DA.DAO\DA.DAO.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.Common\IN.Common.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.DataAccess\IN.ORM.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IN.Logging\IN.Logging.csproj" />
+    <ProjectReference Include="..\BU.DTO\BU.DTO.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AuthorizeNet" Version="2.0.3" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="MailKit" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IServices\Communication\Message\" />
+    <Folder Include="Services\Communication\Message\" />
+  </ItemGroup>
+</Project>
